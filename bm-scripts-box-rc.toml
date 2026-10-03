@@ -1,0 +1,29 @@
+[bmscriptsbox.info]
+id = "d55da428-2563-4bd2-8fcf-4b437d1381af"              
+name = "右键管理"
+desc = "Windows右键菜单管理工具 | 基于开源工具ContextMenuManager可视化管理右键菜单项、自定义新建菜单、开关启动项/计划任务/服务,绿色免安装,一键清理右键冗余菜单"
+version = "1.0.0"                                        
+icon = "./imgs/logo.png"   
+
+[bmscriptsbox.runtime]
+language = "bat"  
+language_version = ">=0.0.0"             
+entry = "main.bat"                   
+terminal = "never"   
+
+
+[bmscriptsbox.triggers]
+[bmscriptsbox.triggers.context_menu]                   
+enabled = true                                 
+targets = ["background"]                        
+
+[bmscriptsbox.triggers.shortcut]                          
+enabled = true                                  
+input_type = ""                                 
+
+
+
+
+
+
+
